@@ -1,0 +1,139 @@
+/* ===== CUSTOM STYLES — STAYOUNG Sports Academy ===== */
+
+/* ---- Base ---- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+/* Offset for fixed navbar on anchor scroll */
+section[id] {
+    scroll-margin-top: 5rem;
+}
+
+/* Fallback: ensure scroll-animated elements are readable even before observer fires */
+.scroll-animate {
+    will-change: opacity, transform;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* ---- Hero Pattern ---- */
+.hero-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.15'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* ---- Navbar (solid white bar so it never depends on JS) ---- */
+.nav-scrolled {
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.12);
+}
+
+.nav-link.text-accent-500 {
+    color: #16a34a !important;
+}
+
+/* ---- Floating Icons ---- */
+@keyframes float {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(5deg); }
+}
+
+.floating-icon {
+    animation: float 6s ease-in-out infinite;
+}
+
+/* ---- Fade-in Animations ---- */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { 
+        opacity: 0; 
+        transform: translateY(30px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+/* ---- Scroll Animations ---- */
+.scroll-animate {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.scroll-animate.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ---- Facility Cards ---- */
+.facility-card.is-visible,
+.training-card.is-visible {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.facility-card.is-visible:hover {
+    transform: translateY(-8px);
+}
+
+/* ---- Training Cards ---- */
+.training-card.is-visible:hover {
+    transform: translateY(-6px);
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 640px) {
+    #hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .training-card {
+        padding: 1.5rem;
+    }
+}
+
+/* ---- Selection color ---- */
+::selection {
+    background-color: #16a34a;
+    color: white;
+}
+
+/* ---- Scroll bar ---- */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #111111;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #16a34a;
+}
