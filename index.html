@@ -54,6 +54,7 @@
                     <a href="#about" class="nav-link text-gray-700 hover:text-accent-500 transition-colors text-sm font-medium">About</a>
                     <a href="#facilities" class="nav-link text-gray-700 hover:text-accent-500 transition-colors text-sm font-medium">Facilities</a>
                     <a href="#training" class="nav-link text-gray-700 hover:text-accent-500 transition-colors text-sm font-medium">Training</a>
+                    <a href="#gallery" class="nav-link text-gray-700 hover:text-accent-500 transition-colors text-sm font-medium">Gallery</a>
                     <a href="#pricing" class="nav-link text-gray-700 hover:text-accent-500 transition-colors text-sm font-medium">Pricing</a>
                     <a href="#location" class="nav-link text-gray-700 hover:text-accent-500 transition-colors text-sm font-medium">Location</a>
                     <a href="#contact" class="nav-link text-gray-700 hover:text-accent-500 transition-colors text-sm font-medium">Contact</a>
@@ -73,6 +74,7 @@
                 <a href="#about" class="block text-gray-700 hover:text-accent-500 transition-colors text-sm font-medium py-2 mobile-nav-link">About</a>
                 <a href="#facilities" class="block text-gray-700 hover:text-accent-500 transition-colors text-sm font-medium py-2 mobile-nav-link">Facilities</a>
                 <a href="#training" class="block text-gray-700 hover:text-accent-500 transition-colors text-sm font-medium py-2 mobile-nav-link">Training</a>
+                <a href="#gallery" class="block text-gray-700 hover:text-accent-500 transition-colors text-sm font-medium py-2 mobile-nav-link">Gallery</a>
                 <a href="#pricing" class="block text-gray-700 hover:text-accent-500 transition-colors text-sm font-medium py-2 mobile-nav-link">Pricing</a>
                 <a href="#location" class="block text-gray-700 hover:text-accent-500 transition-colors text-sm font-medium py-2 mobile-nav-link">Location</a>
                 <a href="#contact" class="block text-gray-700 hover:text-accent-500 transition-colors text-sm font-medium py-2 mobile-nav-link">Contact</a>
@@ -84,7 +86,8 @@
     <!-- ===== HERO SECTION ===== -->
     <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden">
         <!-- Background -->
-        <div class="absolute inset-0 bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800"></div>
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('images/indoor-hall.jpg');"></div>
+        <div class="absolute inset-0 bg-black/70"></div>
         <div class="absolute inset-0 hero-pattern opacity-10"></div>
 
         <!-- Floating sport icons -->
@@ -408,6 +411,91 @@
         </div>
     </section>
 
+    <!-- ===== GALLERY SECTION ===== -->
+    <section id="gallery" class="py-20 md:py-28 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 scroll-animate">
+                <span class="text-accent-500 font-semibold text-sm uppercase tracking-widest">Gallery</span>
+                <h2 class="font-heading font-bold text-3xl md:text-4xl mt-3">Take a Look <span class="text-accent-500">Inside</span></h2>
+                <p class="text-gray-500 mt-4 max-w-2xl mx-auto">A peek at our gym, badminton courts, cricket nets and training hall.</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4">
+                <button type="button" class="gallery-item group relative overflow-hidden rounded-2xl aspect-[4/3] bg-gray-200 focus:outline-none focus-visible:ring-4 focus-visible:ring-accent-500/50" data-full="images/badminton-court-1.jpg" data-caption="Badminton Court 1">
+                    <img src="images/badminton-court-1.jpg" alt="Badminton Court 1 at STAYOUNG Sports Academy" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent text-white text-xs sm:text-sm font-medium text-left px-3 pt-8 pb-2.5">Badminton Court 1</span>
+                </button>
+                <button type="button" class="gallery-item group relative overflow-hidden rounded-2xl aspect-[4/3] bg-gray-200 focus:outline-none focus-visible:ring-4 focus-visible:ring-accent-500/50" data-full="images/gym-smith-machine.jpg" data-caption="Gym – strength training">
+                    <img src="images/gym-smith-machine.jpg" alt="Gym – strength training at STAYOUNG Sports Academy" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent text-white text-xs sm:text-sm font-medium text-left px-3 pt-8 pb-2.5">Gym – strength training</span>
+                </button>
+                <button type="button" class="gallery-item group relative overflow-hidden rounded-2xl aspect-[4/3] bg-gray-200 focus:outline-none focus-visible:ring-4 focus-visible:ring-accent-500/50" data-full="images/cricket-nets-1.jpg" data-caption="Cricket practice nets">
+                    <img src="images/cricket-nets-1.jpg" alt="Cricket practice nets at STAYOUNG Sports Academy" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent text-white text-xs sm:text-sm font-medium text-left px-3 pt-8 pb-2.5">Cricket practice nets</span>
+                </button>
+                <button type="button" class="gallery-item group relative overflow-hidden rounded-2xl aspect-[4/3] bg-gray-200 focus:outline-none focus-visible:ring-4 focus-visible:ring-accent-500/50" data-full="images/kids-table-tennis.jpg" data-caption="Table tennis & kids' area">
+                    <img src="images/kids-table-tennis.jpg" alt="Table tennis & kids' area at STAYOUNG Sports Academy" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent text-white text-xs sm:text-sm font-medium text-left px-3 pt-8 pb-2.5">Table tennis & kids' area</span>
+                </button>
+                <button type="button" class="gallery-item group relative overflow-hidden rounded-2xl aspect-[4/3] bg-gray-200 focus:outline-none focus-visible:ring-4 focus-visible:ring-accent-500/50" data-full="images/gym-dumbbells.jpg" data-caption="Gym – dumbbells & benches">
+                    <img src="images/gym-dumbbells.jpg" alt="Gym – dumbbells & benches at STAYOUNG Sports Academy" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent text-white text-xs sm:text-sm font-medium text-left px-3 pt-8 pb-2.5">Gym – dumbbells & benches</span>
+                </button>
+                <button type="button" class="gallery-item group relative overflow-hidden rounded-2xl aspect-[4/3] bg-gray-200 focus:outline-none focus-visible:ring-4 focus-visible:ring-accent-500/50" data-full="images/badminton-court-2.jpg" data-caption="Badminton Court 2">
+                    <img src="images/badminton-court-2.jpg" alt="Badminton Court 2 at STAYOUNG Sports Academy" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent text-white text-xs sm:text-sm font-medium text-left px-3 pt-8 pb-2.5">Badminton Court 2</span>
+                </button>
+                <button type="button" class="gallery-item group relative overflow-hidden rounded-2xl aspect-[4/3] bg-gray-200 focus:outline-none focus-visible:ring-4 focus-visible:ring-accent-500/50" data-full="images/cardio-zone.jpg" data-caption="Cardio zone">
+                    <img src="images/cardio-zone.jpg" alt="Cardio zone at STAYOUNG Sports Academy" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent text-white text-xs sm:text-sm font-medium text-left px-3 pt-8 pb-2.5">Cardio zone</span>
+                </button>
+                <button type="button" class="gallery-item group relative overflow-hidden rounded-2xl aspect-[4/3] bg-gray-200 focus:outline-none focus-visible:ring-4 focus-visible:ring-accent-500/50" data-full="images/indoor-hall.jpg" data-caption="Indoor hall">
+                    <img src="images/indoor-hall.jpg" alt="Indoor hall at STAYOUNG Sports Academy" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent text-white text-xs sm:text-sm font-medium text-left px-3 pt-8 pb-2.5">Indoor hall</span>
+                </button>
+                <button type="button" class="gallery-item group relative overflow-hidden rounded-2xl aspect-[4/3] bg-gray-200 focus:outline-none focus-visible:ring-4 focus-visible:ring-accent-500/50" data-full="images/gym-floor.jpg" data-caption="Gym – free weights & racks">
+                    <img src="images/gym-floor.jpg" alt="Gym – free weights & racks at STAYOUNG Sports Academy" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent text-white text-xs sm:text-sm font-medium text-left px-3 pt-8 pb-2.5">Gym – free weights & racks</span>
+                </button>
+                <button type="button" class="gallery-item group relative overflow-hidden rounded-2xl aspect-[4/3] bg-gray-200 focus:outline-none focus-visible:ring-4 focus-visible:ring-accent-500/50" data-full="images/cricket-nets-2.jpg" data-caption="Cricket nets">
+                    <img src="images/cricket-nets-2.jpg" alt="Cricket nets at STAYOUNG Sports Academy" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent text-white text-xs sm:text-sm font-medium text-left px-3 pt-8 pb-2.5">Cricket nets</span>
+                </button>
+                <button type="button" class="gallery-item group relative overflow-hidden rounded-2xl aspect-[4/3] bg-gray-200 focus:outline-none focus-visible:ring-4 focus-visible:ring-accent-500/50" data-full="images/gym-cable-area.jpg" data-caption="Gym – cable machines">
+                    <img src="images/gym-cable-area.jpg" alt="Gym – cable machines at STAYOUNG Sports Academy" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent text-white text-xs sm:text-sm font-medium text-left px-3 pt-8 pb-2.5">Gym – cable machines</span>
+                </button>
+                <button type="button" class="gallery-item group relative overflow-hidden rounded-2xl aspect-[4/3] bg-gray-200 focus:outline-none focus-visible:ring-4 focus-visible:ring-accent-500/50" data-full="images/stayoung-wall.jpg" data-caption="STAYOUNG">
+                    <img src="images/stayoung-wall.jpg" alt="STAYOUNG at STAYOUNG Sports Academy" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent text-white text-xs sm:text-sm font-medium text-left px-3 pt-8 pb-2.5">STAYOUNG</span>
+                </button>
+                <button type="button" class="gallery-item group relative overflow-hidden rounded-2xl aspect-[4/3] bg-gray-200 focus:outline-none focus-visible:ring-4 focus-visible:ring-accent-500/50" data-full="images/gym-machines.jpg" data-caption="Gym – machines">
+                    <img src="images/gym-machines.jpg" alt="Gym – machines at STAYOUNG Sports Academy" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent text-white text-xs sm:text-sm font-medium text-left px-3 pt-8 pb-2.5">Gym – machines</span>
+                </button>
+                <button type="button" class="gallery-item group relative overflow-hidden rounded-2xl aspect-[4/3] bg-gray-200 focus:outline-none focus-visible:ring-4 focus-visible:ring-accent-500/50" data-full="images/hall-end.jpg" data-caption="Training hall">
+                    <img src="images/hall-end.jpg" alt="Training hall at STAYOUNG Sports Academy" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent text-white text-xs sm:text-sm font-medium text-left px-3 pt-8 pb-2.5">Training hall</span>
+                </button>
+                <button type="button" class="gallery-item group relative overflow-hidden rounded-2xl aspect-[4/3] bg-gray-200 focus:outline-none focus-visible:ring-4 focus-visible:ring-accent-500/50" data-full="images/reception-walkway.jpg" data-caption="Reception & walkway">
+                    <img src="images/reception-walkway.jpg" alt="Reception & walkway at STAYOUNG Sports Academy" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent text-white text-xs sm:text-sm font-medium text-left px-3 pt-8 pb-2.5">Reception & walkway</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/90 p-4" role="dialog" aria-modal="true" aria-label="Photo viewer">
+        <button type="button" id="lightbox-close" class="absolute top-4 right-4 text-white text-4xl leading-none w-12 h-12 rounded-full hover:bg-white/10" aria-label="Close">&times;</button>
+        <button type="button" id="lightbox-prev" class="absolute left-2 sm:left-6 text-white text-4xl w-12 h-12 rounded-full hover:bg-white/10" aria-label="Previous photo">&#8249;</button>
+        <figure class="max-w-5xl w-full">
+            <img id="lightbox-img" src="" alt="" class="max-h-[80vh] w-auto mx-auto rounded-xl">
+            <figcaption id="lightbox-caption" class="text-white/80 text-center text-sm mt-3"></figcaption>
+        </figure>
+        <button type="button" id="lightbox-next" class="absolute right-2 sm:right-6 text-white text-4xl w-12 h-12 rounded-full hover:bg-white/10" aria-label="Next photo">&#8250;</button>
+    </div>
+
     <!-- ===== PRICING SECTION ===== -->
     <section id="pricing" class="py-20 md:py-28 bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 relative overflow-hidden">
         <div class="absolute inset-0 hero-pattern opacity-5"></div>
@@ -659,6 +747,7 @@
                     <ul class="space-y-2 text-sm">
                         <li><a href="#about" class="text-white/70 hover:text-accent-500 transition-colors">About Us</a></li>
                         <li><a href="#facilities" class="text-white/70 hover:text-accent-500 transition-colors">Facilities</a></li>
+                        <li><a href="#gallery" class="text-white/70 hover:text-accent-500 transition-colors">Gallery</a></li>
                         <li><a href="#training" class="text-white/70 hover:text-accent-500 transition-colors">Training Programs</a></li>
                         <li><a href="#pricing" class="text-white/70 hover:text-accent-500 transition-colors">Pricing</a></li>
                         <li><a href="#contact" class="text-white/70 hover:text-accent-500 transition-colors">Contact</a></li>

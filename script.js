@@ -154,3 +154,43 @@ function handleFormSubmit(e) {
         form.reset();
     }, 2000);
 }
+
+// ---- Gallery Lightbox ----
+document.addEventListener('DOMContentLoaded', () => {
+    const items = [...document.querySelectorAll('.gallery-item')];
+    const box = document.getElementById('lightbox');
+    if (!items.length || !box) return;
+    const img = document.getElementById('lightbox-img');
+    const cap = document.getElementById('lightbox-caption');
+    let current = 0;
+
+    const show = (i) => {
+        current = (i + items.length) % items.length;
+        img.src = items[current].dataset.full;
+        img.alt = items[current].dataset.caption;
+        cap.textContent = items[current].dataset.caption;
+    };
+    const open = (i) => {
+        show(i);
+        box.classList.remove('hidden');
+        box.classList.add('flex');
+        document.body.style.overflow = 'hidden';
+    };
+    const close = () => {
+        box.classList.add('hidden');
+        box.classList.remove('flex');
+        document.body.style.overflow = '';
+    };
+
+    items.forEach((el, i) => el.addEventListener('click', () => open(i)));
+    document.getElementById('lightbox-close').addEventListener('click', close);
+    document.getElementById('lightbox-prev').addEventListener('click', () => show(current - 1));
+    document.getElementById('lightbox-next').addEventListener('click', () => show(current + 1));
+    box.addEventListener('click', (e) => { if (e.target === box) close(); });
+    document.addEventListener('keydown', (e) => {
+        if (box.classList.contains('hidden')) return;
+        if (e.key === 'Escape') close();
+        if (e.key === 'ArrowLeft') show(current - 1);
+        if (e.key === 'ArrowRight') show(current + 1);
+    });
+});
